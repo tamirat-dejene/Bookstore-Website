@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Catalog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            
+        }
+
+        h2 {
+            text-align: left;
+        }
+
+        .book {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .book img {
+            max-width: 50%; 
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Book Catalog</h2>
+
+    <div class="catalog-item flex">
+        <img src="images/book1.jpg" alt="" class="catalog-img">
+        <div class="catalogItem-details">
+            <h4 class="catalogItem-topic">The Mystery of the Lost Key</h4>
+            <p class="catalogItem-des">A thrilling detective novel that will keep you on the edge of your seat.</p>
+        </div>
+        <div class="catalogItem-price flex">
+            <span class="discount-price">$14.99</span>
+            <span class="real-price">$18.99</span>
+        </div>
+    </div>
+    <a href="#addToCart" rel="modal:open">Add to Cart</a>
+    
+</body>
+</html>
