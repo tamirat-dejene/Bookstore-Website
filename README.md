@@ -1,5 +1,5 @@
-# Title: [BookStore Website] 
-## Group: [6] 
+# Title: BookStore Website
+## Group: 6 
 ## Group Members:
 | Name | Id |
 | :---         |     :---:      |
