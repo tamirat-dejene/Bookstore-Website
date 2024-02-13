@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <!--Scroll Reveal --> 
+  <link rel="stylesheet" href="css/scrollreveal.min.js">
+  <!-- Boxicons-->
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+   <!--CSS-->
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="./css/catalog.css">
+  
+</head>
+
+<body class="body">
+  <header class="header">
+        
+    <nav class="nav container flex">
+        <a href="#" class="logo-content flex">
+            <i class='bx bx-book logo-icon'></i>
+            <span class="logo-text">Bookstore.</span>
+        </a>
+        <div class="menu-content">
+            <ul class="menu-list flex">
+                <li><a href="index.html" class="nav-link active-navlink">home</a></li>
+                <li><a href="index.html#about" class="nav-link">about</a></li>
+                <li><a href="catalog.html" class="nav-link">catalog</a></li>
+                <li><a href="Review.html" class="nav-link">review</a></li>
+            </ul>
+
+            <div class="media-icons flex">
+                <a href="https://www.facebook.com"><i class='bx bxl-facebook'></i></a>
+                <a href="https://twitter.com/i/flow/login"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.instagram.com/accounts/login"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://github.com/login"><i class='bx bxl-github'></i></a>
+                <a href="https://www.youtube.com/login"><i class='bx bxl-youtube'></i></a>
+            </div>
+
+            <i class='bx bx-x navClose-btn'></i>
+        </div>
+       
+         <div class="left-nav">
+            <div class="search-icon">
+            <i id="search-icon" class="bx bx-search logo-icon"></i>
+            </div>
+
+            <div class="login-content">
+                <i class='bx bxs-user'></i></a>
+            </div>
+            
+            <i class='bx bx-menu navOpen-btn'></i>
+        </div>
+    </nav>    
+  </header>
+  <div class="wrapper">
+    <span class="icon-close"><i class='bx bx-x'></i></span>
+   <div class="form-box login">
+       
+   <form action="" class="form-box"> 
+     <h2>Login</h2>
+   <div class="input-box">
+     <input class="input-text" type="email" required>
+     <label for="input-text">Email</label>
+     <i class='bx bxs-envelope' ></i>
+   </div>
+   <div class="input-box">
+     <input class="input-text" type="password"  minlength="8" maxlength="32" required>
+     <label for="input-text">password</label>
+     <i class='bx bxs-lock-alt' ></i>
+   </div>
+   <div class="remeber-forgot">
+      <label for="remeber-me"><input  type="checkbox">
+    Remeber me</label>
+ <a href="#">Forgot password?</a>
+ </div>
+ <div class="reg">
+   <button class="btn" >Login</button>
+     </div> 
+   <div class="login-register">
+       <p>Don't have an account ?<a  href="#"class="register-link">Register</a></p>
+   </div>
+   </div> 
+   <div class="form-box register">
+           <form action="" class="form-box"> 
+             <h2>Sign up</h2>
+             <div class="input-box">
+               
+               <input class="input-text" type="text" >
+               <label for="input-text">User name</label>
+               <i class='bx bxs-user' ></i>
+             </div>
+           
+           
+           <div class="input-box">
+             
+             <input class="input-text" type="email">
+             <label for="input-text">Email</label>
+             <i class='bx bxs-envelope' ></i>
+           </div>
+           
+           <div class="input-box">
+             
+             <input class="input-text" type="password"  minlength="8" maxlength="32" >
+             <label for="input-text">password</label>
+             <i class='bx bxs-lock-alt' ></i>
+           </div>
+           <div class="remeber-forgot">
+               <label for="remeber-me"><input  type="checkbox"id="remeber-me">
+             I agree to the terms and conditions</label>
+          
+          </div>
+           <div class="reg">
+            <button class="btn">Register </button>
+              </div>
+              <div class="login-register"><p>Already have an account ?<a  href="#" class="login-link">Login</a></p>
+              </div>
+       </form>
+   </div>
+ </div>
+  
+  
+  <section class="section brand">
+    <div class="brand-container container">
+      <h4 class="section-subtitle"><i>Featured Catalog</i></h4>
+      <div class="catalog-item">
+        <img src="images/bookPromo1.jpg" alt="" class="bookimgm">
+        <h5 class="content-title">You Wish We provide</h5>
+      </div>
+      <div class="catlogg">
+        <p class="content-subtitle">Our Popular Catalog </p>
+        <p class="content-title">Discover Our Diverse Collection</p>
+        <p class="content-description">Explore our extensive catalog featuring a wide range of
+          genres, authors, and captivating stories.</p>
+      </div>
+
+      <div style="display: flex; align-items: center; 
+    justify-content: center;">
+        <div class="booksall">
+          <div class="book" id="book1">
+            <div class="bookimg"><img id="img1" src="images/book1.jpg" alt=""></div>
+            <div class="book-details">
+               <h1 class="title">The Lost Key</h1>
+            <p class="description"><b><span class="author">Author: Melinda Theibar</span></b> <br>
+              <br>Genre: fiction
+            </div>
+           
+           <div class="cart">
+              <h3>price: <span>8</span>$</h3>
+              <button class="cartbtn" onclick="addToCart('book1')">add to cart</button>
+            </div>
+          </div>
+          <div class="book" id="book2">
+            <div class="bookimg"><img src="images/Cover 2.jpg" alt=""></div>
+            <div class="book-details">
+<h1 class="title">Queen of hearts</h1>
+            <p class="description"><b><span class="author">Author: Mery Martin</span></b> <br>
+              Genre: Love story
+            </div>
+            
+              <div class="cart">
+              <h3>price: <span>12</span>$</h3>
+              <button class="cartbtn" onclick="addToCart('book2')">add to cart</button>
+            </div>
+          </div>
+          <div class="book" id="book3">
+            <div class="bookimg"><img src="images/cover 4.jpg" alt=""></div>
+            <div class="book-details">
+            <h1 class="title">House of Neighbor</h1>
+            <p class="description"><b><span class="author">Author: Charlie Steward</span></b> <br>
+              Genre: True story
+            </div>
+            <div class="cart">
+              <h3>price: <span>10</span>$</h3>
+              <button class="cartbtn" onclick="addToCart('book3')">add to cart</button>
+            </div>
+          </div>
+          <div class="book" id="book4">
+            <div class="bookimg"><img src="images/cover 5.jpg" alt=""></div>
+            <div class="book-details">
+           <h1 class="title">Dreaming at the top of my lung</h1>
+            <p class="description"><b><span class="author">Author:Israel Finn</span></b> <br>
+              Genre: Psychology
+            </div>
+            
+            <div class="cart">
+              <h3>price: <span>9</span>$</h3>
+              <button class="cartbtn" onclick="addToCart('book4')">add to cart</button>
+            </div>
+          </div>
+          <div class="book" id="book4">
+            <div class="bookimg"><img src="images/Cover 1.jpg" alt=""></div>
+            <div class="book-details">
+<h1 class="title">The Hobbit</h1>
+            <p class="description"><b><span class="author">Author:JRR TOLKEN</span></b> <br>
+              Genre: Crime
+            </div>
+            
+            <div class="cart">
+              <h3>price: <span>15</span>$</h3>
+              <button class="cartbtn" onclick="addToCart('book4')">add to cart</button>
+            </div>
+          </div>
+          <div class="book" id="book4">
+            <div class="bookimg"><img src="images/Cover 3.jpg" alt=""></div>
+            <div class="book-details">
+ <h1 class="title">A Love & Beyond</h1>
+            <p class="description"><b><span class="author">Author:Dan Soffer</span></b> <br>
+              Genre: True love story
+            </div>
+           
+            <div class="cart">
+              <h3>price: <span>15</span>$</h3>
+              <button class="cartbtn" onclick="addToCart('book4')">add to cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cart">
+    <div class="carter">
+      <h4 class="section-subtitle"><i>Your Shopping Cart</i></h4>
+      <div id="cartItemsContainer"></div>
+    </div>
+  </section>
+
+  <div class="total-sum"></div>
+
+  <footer class="section footer">
+    <div class="footer-container container">
+      <div class="footer-content">
+        <a href="#" class="logo-content flex">
+          <i class='bx bx-book logo-icon'></i>
+          <span class="logo-text">Bookstore.</span>
+        </a>
+        <p class="content-description">Connecting readers with captivating stories. Find your next favorite book with
+          us.</p>
+        <div class="footer-location flex">
+          <i class='bx bx-map map-icon'></i>
+          <div class="location-text">
+            Addis Ababa, Ethiopia
+          </div>
+        </div>
+      </div>
+      <div class="footer-linkContent">
+        <ul class="footer-links">
+          <h4 class="footerLinks-title">Facility</h4>
+          <li><a href="#" class="footer-link">Reading Room</a></li>
+          <li><a href="#" class="footer-link">Book Club</a></li>
+          <li><a href="#" class="footer-link">Literary Events</a></li>
+          <li><a href="#" class="footer-link">Online Ordering</a></li>
+          <li><a href="#" class="fzooter-link">Author Talks</a></li>
+        </ul>
+        <ul class="footer-links">
+          <h4 class="footerLinks-title">Genres</h4>
+          <li><a href="#" class="footer-link">Fiction</a></li>
+          <li><a href="#" class="footer-link">Non-Fiction</a></li>
+          <!-- more genre links as needed -->
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!-- <script src="./js/myscript.js"></script> -->
+  <script src="./js/script.js"></script>
+  <script>
+    
+  </script>
+</body>
+
+</html>
