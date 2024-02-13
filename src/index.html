@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Team INNOV8">
+    <meta name="description" content="Online Bookstore website developed by team Innov8">
+
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="icons/icon2.png">
+    <title>Online Bookstore</title>
+    <!-- <style>
+        html {
+            font-size: 15px;
+            background-color: antiquewhite;
+            margin: 0%;
+        }
+        .menu-content{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: larger;
+        }
+        .logo-content{
+            font-size: larger;
+            margin-right: 3rem;
+        }
+        .main-menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .main-menu li {
+            margin-top: 10px;
+            margin-right: 25px;
+            margin-bottom: 20px;
+        }
+
+        .main-menu a {
+            text-decoration: none;
+            color: #151414;
+            font-weight: bold;
+            font-size: 17px; 
+            transition: color 0.3s ease;
+        }
+        .brand-img {
+            border-radius: 10px;
+            margin-bottom: 5px;
+            margin-top: 5x;
+        }
+
+        .main-menu a:hover {
+            color: #ff7801; 
+        }
+        
+        .top-nav  {
+            background-image: url('images/nav.jpg');
+            background-size:cover;
+            background-position: center;
+            color: rgb(205, 175, 68);
+            font-size: 17px;
+            text-align: left;
+            padding: 50px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .home-details{
+            background-image: url('images/aboutImg.jpg');
+            background-size: 100%;
+            height:100lvh;
+            margin: 0;
+            border-radius: 10px;
+        }
+
+        .home-text{
+            text-align: center;
+            color: #e7ac07;
+            padding-top: 160px;
+            padding-bottom: 100px;
+            font-size: 60px;
+        }
+        .about-list{
+            list-style:circle;
+            display: flex;
+            align-items: center;
+            margin: 10px auto;
+        }
+        .newsletter-inputBox{
+            width: 60%;
+            height: 40px;
+            border-radius: 35px;
+            box-shadow: inset 0 -15px 30px rgba(0,0,0,.1), 0 -
+            15px 30px rgba(0,0,0,.1);
+            transition: all .5s ease;
+        }
+        .media-icons{
+            font-size: x-large;
+        }
+        .footer{
+            position: relative;
+            bottom: 0;  
+            background-color:#668fa5 ;
+            border-radius: 10px;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        th, td, caption {
+            border: 1px solid #333;
+            font-family: 'Courier New', Courier, monospace;
+            border-collapse: separate;
+            padding: 0.5rem;
+        }
+    </style> -->
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <article id="topnav">
+            <nav class="top-nav">
+                <div class="container">
+                    <a href="#" class="logo-content">
+                        <i class="bx bx-book logo-icon"></i>
+                        <span class="logo-text">Bookstore.</span>
+                    </a>
+                </div>
+                <div class="menu-content">
+                    <table width="100%" bgcolor="#41b0cc">
+                        <tr height="75px" align="center" style="font-size: larger;">
+                            <td width="100px"><a href="#">Home</a></td>
+                            <td width="100px"><a href="#about">About</a></td>
+                            <td width="100px"><a href="catalog.html">Our Book Catalog</a></td>
+                            <td width="100px"><a href="#view-review">Show reviews</a></td>
+                            <td width="100px"><a href="#subscribe">Subscribe</a></td>
+                            <td width="100px"><a href="review.html">Submit your review</a></td>
+                            <td width="100px"><a href="contact.html">Send Us a Message</a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="contact">
+                    <a href="tel:1234567890">Tel: +251911111111</a>
+                </div>
+            </nav>
+        </article>
+    </header>
+
+
+    <main>
+        <section class="home" id="home">
+            <div class="home-details">
+                <div class="home-text">
+                    <table align="center">
+                        <tr>
+                            <td align="center">
+                                <font size="+5">Discover a World of Books.</font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2 class="homeTitle">
+                                    <font size="+10">Explore a Vast Collection of Literature</font>
+                                </h2>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="section about" id="about">
+            <fieldset class="about-web">
+                <legend>Our Bookstore</legend>
+                <div class="about-content container">
+                    <p class="content-description">Dive into the world of stories and knowledge. Our passion for books
+                        knows no bounds.</p>
+                    <div class="about-text">
+                        <h4 class="content-subtitle"><i>Our Bookstore</i></h4>
+                        <h2 class="content-title">Where Words Come to Life</h2>
+                        <p class="content-description">We believe in the power of literature to inspire, educate, and
+                            entertain.
+                            Our curated selection caters to every reader's taste.</p>
+                        <ul class="about-lists">
+                            <li class="about-list">Fiction</li>
+                            <li class="about-list">Non-Fiction</li>
+                            <li class="about-list">Science Fiction</li>
+                        </ul>
+                        <details>
+                            <summary>Read More</summary>
+                            <span class="about-readmore">
+                                <iframe src="readMore.txt" width="100%" height="200px" frameborder="0"></iframe>
+                            </span>
+                        </details>
+                    </div>
+                </div>
+            </fieldset>
+        </section>
+
+        <hr>
+        <section class="section brand">
+            <div class="brand-container container">
+                <h4 class="section-subtitle"><i>Our Trusted Authors</i></h4>
+                <div class="brand-images">
+                    <div class="brand-image">
+                        <figure>
+                            <a href="https://en.wikipedia.org/wiki/J._K._Rowling" target="_blank">
+                                <img src="images/author1.jpg" alt="J._K._Rowling" class="brand-img" height="200px"
+                                    width="200px">
+                            </a>
+                            <a href="https://en.wikipedia.org/wiki/R._L._Stine" target="_blank">
+                                <img src="images/author2.jpg" alt="R._L._Stine" class="brand-img" height="200px"
+                                    width="200px"></a>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <!-- Reviews Section -->
+        <section class="section review" id="view-review">
+            <div class="review-container">
+                <div class="review-text">
+                    <h4 class="section-subtitle"><i>Reviews</i></h4>
+                    <h2 class="section-title">What Readers Say</h2>
+                    <p class="section-description">Read what our customers have to say about their favorite books and
+                        experiences.</p>
+                </div>
+                <div class="testimonials">
+                    <fieldset>
+                        <legend>Review Box</legend>
+                        <div class="testimonial-content">
+                            <figure>
+                                <img src="images/reader1.jpg" alt="" height="120" width="120" class="review-img">
+                                <figcaption>Franklin Dmitri</figcaption>
+                                <q class="review-quote">I was captivated by the plot twists in the latest mystery novel.
+                                    Couldn't put it
+                                    down!</q>
+                                <br>
+                                <img src="images/reader2.jpg" alt="" height="120" width="120" class="review-img">
+                                <figcaption>Book Enthusiast</figcaption>
+                                <q class="review-quote">I was captivated by the plot twists in the latest mystery novel.
+                                    Couldn't put it
+                                    down!</q>
+                            </figure>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="section newsletter" id="subscribe">
+            <h4 class="section-subtitle">Subscribe to our newsletter!</h4>
+            <p class="section-description">Subscribe to our newsletter and stay updated on the latest releases,
+                promotions, and
+                literary events.</p>
+            <div class="newsletter-inputBox">
+                <fieldset style="border-radius: 10px; width:max-content">
+                    <legend>Subscribe to our newsletter:</legend>
+                    <form action="https://httpbin.org/post">
+                        <input type="email" placeholder="email@example.com" class="newsletter-input" required>
+                        <button class="button newsletter-button" type="submit"
+                            style="border-radius: 20%;">Subscribe</button>
+                    </form>
+                </fieldset>
+            </div>
+            <div class="newsletter media-icons"><br>
+                <!-- We will replace the following URLs with our actual social media links -->
+                <a href="https://www.facebook.com/"><i class='bx bxl-facebook'></i></a>
+                <a href="https://twitter.com"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.instagram.com"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://github.com/"><i class='bx bxl-github'></i></a>
+                <a href="https://www.youtube.com"><i class='bx bxl-youtube'></i></a>
+            </div>
+        </section>
+    </main>
+
+    <hr>
+    <!-- Footer -->
+    <footer class="section footer">
+        <center>
+            <div class="footer-container container">
+                <div class="footer-content">
+                    <a href="#" class="logo-content">
+                        <i class='bx bx-book logo-icon'></i>
+                        <span class="logo-text">Back to Top</span>
+                    </a>
+                    <p class="content-description">Connecting readers with captivating stories. Find your next favorite
+                        book
+                        with us.</p>
+                    <div class="footer-location">
+                        <a href="http://maps.google.com/" target="_blank"><i class='bx bx-map map-icon'></i></a>
+                        <div class="location-text">
+                            <address>AASTU, Addis Ababa, Ethiopia</address>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="footer-linkContent">
+                    <ul class="footer-links" style="list-style-type: none;">
+                        <h4 class="footerLinks-title">Facility</h4>
+                        <li><a href="#" class="footer-link">Reading Room</a></li>
+                        <li><a href="#" class="footer-link">Book Club</a></li>
+                        <li><a href="#" class="footer-link">Literary Events</a></li>
+                        <li><a href="#" class="catalog.html">Online Ordering</a></li>
+                        <li><a href="#" class="footer-link">Author Talks</a></li>
+                    </ul>
+                    <ul class="footer-links" style="list-style-type: none;">
+                        <h4 class="footerLinks-title">Genres</h4>
+                        <li><a href="catalog.html" class="footer-link">Fiction</a></li>
+                        <li><a href="catalog.html" class="footer-link">Non-Fiction</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p>Copyright &copy; Team Innov8</p>
+        </center>
+    </footer>
+</body>
+
+</html>
