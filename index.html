@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bookstore Website</title>
-  
-    <!--link to login page -->
-   <!--Swiper JS CSS--> 
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
-    <!--Scroll Reveal --> 
-    <link rel="stylesheet" href="css/scrollreveal.min.js">
+
     <!-- Boxicons-->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-     <!--CSS-->
+    <!--CSS-->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="catalog.html">
-   
+
 </head>
+
 <body>
+
+    <div class="coverer"></div>
     <!-- Header -->
     <header class="header">
-        
+
         <nav class="nav container flex">
             <a href="#" class="logo-content flex">
                 <i class='bx bx-book logo-icon'></i>
@@ -45,361 +44,352 @@
 
                 <i class='bx bx-x navClose-btn'></i>
             </div>
-           
-             <div class="left-nav">
+
+            <div class="left-nav">
                 <div class="search-icon">
-                <i id="search-icon" class="bx bx-search logo-icon"></i>
+                    <i id="search-icon" class="bx bx-search logo-icon"></i>
                 </div>
-    
+
                 <div class="login-content">
                     <i class='bx bxs-user'></i>
                 </div>
-                
+
                 <i class='bx bx-menu navOpen-btn'></i>
             </div>
-        </nav>    
+        </nav>
     </header>
 
- 
-      <div class="wrapper">
-         <span class="icon-close"><i class='bx bx-x'></i></span>
+    <!-- Sign Up -->
+    <div class="wrapper">
+        <span class="icon-close"><i class='bx bx-x'></i></span>
         <div class="form-box login">
-            
-        <form action="" class="form-box"> 
-          <h2>Login</h2>
-        <div class="input-box">
-          <input class="input-text" type="email" required>
-          <label for="input-text">Email</label>
-          <i class='bx bxs-envelope' ></i>
-        </div>
-        <div class="input-box">
-          <input class="input-text" type="password"  minlength="8" maxlength="32" required>
-          <label for="input-text">password</label>
-          <i class='bx bxs-lock-alt' ></i>
-        </div>
-        <div class="remeber-forgot">
-           <label for="remeber-me"><input  type="checkbox">
-         Remeber me</label>
-      <a href="#">Forgot password?</a>
-      </div>
-      <div class="reg">
-        <button class="btn" >Login</button>
-          </div> 
-        <div class="login-register">
-            <p>Don't have an account ?<a  href="#"class="register-link">Register</a></p>
-        </div>
-        </div> 
-        <div class="form-box register">
-                <form action="" class="form-box"> 
-                  <h2>Sign up</h2>
-                  <div class="input-box">
-                    
-                    <input class="input-text" type="text" >
-                    <label for="input-text">User name</label>
-                    <i class='bx bxs-user' ></i>
-                  </div>
-                
-                
+
+            <form action="" class="form-box">
+                <h2>Login</h2>
                 <div class="input-box">
-                  
-                  <input class="input-text" type="email">
-                  <label for="input-text">Email</label>
-                  <i class='bx bxs-envelope' ></i>
+                    <input class="input-text" type="email" required>
+                    <label for="input-text">Email</label>
+                    <i class='bx bxs-envelope'></i>
                 </div>
-                
                 <div class="input-box">
-                  
-                  <input class="input-text" type="password"  minlength="8" maxlength="32" >
-                  <label for="input-text">password</label>
-                  <i class='bx bxs-lock-alt' ></i>
+                    <input class="input-text" type="password" minlength="8" maxlength="32" required>
+                    <label for="input-text">password</label>
+                    <i class='bx bxs-lock-alt'></i>
                 </div>
                 <div class="remeber-forgot">
-                    <label for="remeber-me"><input  type="checkbox"id="remeber-me">
-                  I agree to the terms and conditions</label>
-               
-               </div>
+                    <label for="remeber-me"><input type="checkbox">
+                        Remeber me</label>
+                    <a href="#">Forgot password?</a>
+                </div>
                 <div class="reg">
-                 <button class="btn">Register </button>
-                   </div>
-                   <div class="login-register"><p>Already have an account ?<a  href="#" class="login-link">Login</a></p>
-                   </div>
+                    <button class="btn">Login</button>
+                </div>
+                <div class="login-register">
+                    <p>Don't have an account ?<a href="#" class="register-link">Register</a></p>
+                </div>
+        </div>
+        <div class="form-box register">
+            <form action="" class="form-box">
+                <h2>Sign up</h2>
+                <div class="input-box">
+
+                    <input class="input-text" type="text">
+                    <label for="input-text">User name</label>
+                    <i class='bx bxs-user'></i>
+                </div>
+
+
+                <div class="input-box">
+
+                    <input class="input-text" type="email">
+                    <label for="input-text">Email</label>
+                    <i class='bx bxs-envelope'></i>
+                </div>
+
+                <div class="input-box">
+
+                    <input class="input-text" type="password" minlength="8" maxlength="32">
+                    <label for="input-text">password</label>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <div class="remeber-forgot">
+                    <label for="remeber-me"><input type="checkbox" id="remeber-me">
+                        I agree to the terms and conditions</label>
+
+                </div>
+                <div class="reg">
+                    <button class="btn">Register </button>
+                </div>
+                <div class="login-register">
+                    <p>Already have an account ?<a href="#" class="login-link">Login</a></p>
+                </div>
             </form>
         </div>
-      </div>
-        <!-- Home Section -->
-        <section class="home" id="home">
-            <div class="home-content">
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="images/homeImg1.jpg" alt="" class="home-img">
-                            <div class="home-details">
-                                <div class="home-text">
-                                    <h4 class="homeSubtitle">Discover a World of Books.</h4>
-                                    <h2 class="homeTitle">Explore a Vast Collection <br> of Literature</h2>
-                                </div>
-                                <button class="button">Explore</button>
+    </div>
+
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/homeImg1.jpg" alt="" class="home-img">
+                        <div class="home-details">
+                            <div class="home-text">
+                                <h4 class="homeSubtitle">Discover a World of Books.</h4>
+                                <h2 class="homeTitle">Explore a Vast Collection <br> of Literature</h2>
                             </div>
+                            <button class="button"> <a href="catalog.html">Explore</a></button>
                         </div>
-                        <!-- We will add more slides for different book promotions -->
                     </div>
-                    <div class="swiper-button-next swiper-navBtn"></div>
-                    <div class="swiper-button-prev swiper-navBtn"></div>
-                    <div class="swiper-pagination"></div>
+                    <!-- We will add more slides for different book promotions -->
                 </div>
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="about-content container">
+            <div class="about-imageContent">
+                <img src="images/aboutImg.jpg" alt="" class="about-img">
+                <div class="aboutImg-textBox">
+                    <i class='bx bx-heart heart-icon flex'></i>
+                    <p class="content-description">Dive into the world of stories and knowledge. Our passion for books
+                        knows no bounds.</p>
+                </div>
+            </div>
+
+            <div class="about-details">
+                <div class="about-text">
+                    <h4 class="content-subtitle"><i>Our Bookstore</i></h4>
+                    <h2 class="content-title">Where Words Come to Life</h2>
+                    <p class="content-description">We believe in the power of literature to inspire, educate, and
+                        entertain. Our curated selection caters to every reader's taste.</p>
+                    <ul class="about-lists flex">
+                        <li class="about-list">Fiction</li>
+                        <li class="about-list dot">.</li>
+                        <li class="about-list">Non-Fiction</li>
+                        <li class="about-list dot">.</li>
+                        <li class="about-list">Science Fiction</li>
+                    </ul>
+                </div>
+
+                <div class="about-buttons flex">
+                    <a href="#" class="about-link flex">
+                        <span class="link-text">Discover More Books</span>
+                        <i class='bx bx-right-arrow-alt about-arrowIcon'></i>
+                    </a>
+                </div>
+
+            </div>
+            <div class="about-intro-video">
+                <video src="/images/intro.mkv" controls class="about-video" autoplay loop muted></video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section class="section catalog" id="catalog">
+        <div class="catalog-container container">
+            <div class="catalog-text">
+                <h4 class="section-subtitle"><i>Our Popular Catalog</i></h4>
+                <h2 class="section-title">Discover Our Diverse Collection</h2>
+                <p class="section-description">
+                    Explore our extensive catalog featuring a wide range of genres, authors, and captivating stories.
+                </p>
+            </div>
+
+            <div class="catalog-content">
+                <div class="catalog-item catalog-item1 flex">
+                    <img src="images/book1.jpg" alt="" class="catalog-img">
+                    <div class="catalogItem-details">
+                        <h4 class="catalogItem-topic"><span class="no-wrap">The Mystery of the Lost Key</span></h4>
+                        <p class="catalogItem-des">This is just a placeholder. <br> A thrilling detective novel that
+                            will keep you on the edge of
+                            your seat.</p>
+
+                    </div>
+                    <div class="catalogItem-price flex">
+                        <span class="discount-price">$14.99</span>
+                        <span class="real-price">$18.99</span>
+                    </div>
+                    
+                </div>
+                <div class="catalog-item catalog-item2 flex">
+                    <img src="images/Cover 1.jpg" alt="" class="catalog-img">
+                    <div class="catalogItem-details">
+                        <h4 class="catalogItem-topic"><span class="no-wrap">The Mystery of the Lost Key</span></h4>
+                        <p class="catalogItem-des">This is just a placeholder. <br> A thrilling detective novel that
+                            will keep you on the edge of
+                            your seat.</p>
+                    </div>
+                    <div class="catalogItem-price flex">
+                        <span class="discount-price">$14.99</span>
+                        <span class="real-price">$18.99</span>
+                    </div>
+                </div>
+                <div class="catalog-item catalog-item3 flex">
+                    <img src="images/Cover 2.jpg" alt="" class="catalog-img">
+                    <div class="catalogItem-details">
+                        <h4 class="catalogItem-topic"><span class="no-wrap">The Mystery of the Lost Key</span></h4>
+                        <p class="catalogItem-des">This is just a placeholder. <br> A thrilling detective novel that
+                            will keep you on the edge of
+                            your seat.</p>
+                    </div>
+
+                    <div class="catalogItem-price flex">
+                        <span class="discount-price">$14.99</span>
+                        <span class="real-price">$18.99</span>
+                    </div>
+                </div>
+                <div class="catalog-item catalog-item4 flex">
+                    <img src="images/Cover 3.jpg" alt="" class="catalog-img">
+                    <div class="catalogItem-details">
+                        <h4 class="catalogItem-topic"><span class="no-wrap">The Mystery of the Lost Key</span></h4>
+                        <p class="catalogItem-des">This is just a placeholder. <br> A thrilling detective novel that
+                            will keep you on the edge of
+                            your seat.</p>
+                    </div>
+                    <div class="catalogItem-price flex">
+                        <span class="discount-price">$14.99</span>
+                        <span class="real-price">$18.99</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Section -->
+    <section class="section brand">
+        <div class="brand-container container">
+            <h4 class="section-subtitle"><i>Our Trusted Authors</i></h4>
+            <div class="brand-images">
+                <!-- Add author images -->
+                <figure class="brand-image">
+                    <a href="https://en.wikipedia.org/wiki/J._K._Rowling" title="J. K. Rowling" target="_blank"><img
+                            src="images/author1.jpg" alt="" class="brand-img"></a>
+                    <figcaption> British author and philanthropist. She wrote Harry Potter, a seven-volume fantasy
+                        series published from 1997 to 2007.</figcaption>
+                </figure>
+                <figure class="brand-image">
+                    <a href="https://en.wikipedia.org/wiki/R._L._Stine" title="R. L. Stine" target="_blank"><img
+                            src="images/author2.jpg" alt="" class="brand-img"></a>
+                    <figcaption>Sometimes known as Jovial Bob Stine and Eric Affabee, is an American novelist, short
+                        story writer, television producer,
+                        screenwriter, and executive editor.</figcaption>
+                </figure>
+                <!-- Add more author images -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="section review" id="review">
+        <div class="review-container container">
+            <div class="review-text">
+                <h4 class="section-subtitle"><i>Reviews</i></h4>
+                <h2 class="section-title">What Readers Say</h2>
+                <p class="section-description">Read what our customers have to say about their favorite books and
+                    experiences.</p>
+            </div>
+
+            <div class="testimonials">
+                <!-- Add book-related testimonials -->
+                <div class="testimonial-content flex">
+                    <img src="images/reader1.jpg" alt="" class="review-img">
+                    <p class="review-quote">I was captivated by the plot twists in the latest mystery novel.
+                        Couldn't put it down!</p>
+                    <i class='bx bxs-quote-alt-left quote-icon'></i>
+                    <div class="testimonial-personDetails flex">
+                        <span class="name">Bob Lee</span>
+                        <span class="job">Casual reader</span>
+                    </div>
+                </div>
+                <div class="testimonial-content flex">
+                    <img src="images/reader2.jpg" alt="" class="review-img">
+                    <p class="review-quote">I can not believe the composition of the book! It was so thrilling</p>
+                    <i class='bx bxs-quote-alt-left quote-icon'></i>
+                    <div class="testimonial-personDetails flex">
+                        <span class="name">Franklin Dmitri</span>
+                        <span class="job">Book Enthusiast</span>
+
+                    </div>
+
+                </div>
+                <div class="about-buttons flex">
+                    <button class="button"><a href="Review.html">Submit review</a></button>
+                </div>
+            </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="section newsletter">
+        <div class="newsletter-container container">
+
+            <p class="section-description">Subscribe to our newsletter and stay updated on the latest releases,
+                promotions, and literary events.</p>
+            <div class="newsletter-inputBox">
+                <input type="email" placeholder="email@example.com" class="newsletter-input">
+                <button class="button newsletter-button">Subscribe</button>
             </div>
             
-        </section>
-    
-        <!-- About Section -->
-        <section class="section about" id="about">
-            <div class="about-content container">
-                <div class="about-imageContent">
-                    <img src="images/aboutImg.jpg" alt="" class="about-img">
-                    <div class="aboutImg-textBox">
-                        <i class='bx bx-heart heart-icon flex'></i>
-                        <p class="content-description">Dive into the world of stories and knowledge. Our passion for books
-                            knows no bounds.</p>
-                    </div>
-                </div>
-    
-                <div class="about-details">
-                    <div class="about-text">
-                        <h4 class="content-subtitle"><i>Our Bookstore</i></h4>
-                        <h2 class="content-title">Where Words Come to Life</h2>
-                        <p class="content-description">We believe in the power of literature to inspire, educate, and
-                            entertain. Our curated selection caters to every reader's taste.</p>
-                        <ul class="about-lists flex">
-                            <li class="about-list">Fiction</li>
-                            <li class="about-list dot">.</li>
-                            <li class="about-list">Non-Fiction</li>
-                            <li class="about-list dot">.</li>
-                            <li class="about-list">Science Fiction</li>
-                        </ul>
-                    </div>
-    
-                    <div class="about-buttons flex">
-                        <button class="button">About Us</button>
-                        <a href="#" class="about-link flex">
-                            <span class="link-text">see more</span>
-                            <i class='bx bx-right-arrow-alt about-arrowIcon'></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="about-intro-video">
-                    <video src="/images/intro.mkv" controls  class="about-video"></video>
-                </div>
+            <div class="newsletter media-icons flex">
+                <!-- Replace the following URLs with our actual social media links -->
+                <a href="https://www.facebook.com"><i class='bx bxl-facebook'></i></a>
+                <a href="https://twitter.com"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.instagram.com"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://github.com"><i class='bx bxl-github'></i></a>
+                <a href="https://www.youtube.com"><i class='bx bxl-youtube'></i></a>
             </div>
-        </section>
-    
-        <!-- Catalog Section -->
-        <section class="section catalog" id="catalog">
-            <div class="catalog-container container">
-                <div class="catalog-text">
-                    <h4 class="section-subtitle"><i>Our Popular Catalog</i></h4>
-                    <h2 class="section-title">Discover Our Diverse Collection</h2>
-                    <p class="section-description">
-                        Explore our extensive catalog featuring a wide range of genres, authors, and captivating stories.
-                    </p>
-                </div>
-    
-                <div class="catalog-content">
-                    <div class="catalog-item catalog-item1 flex">
-                        <img src="images/book1.jpg" alt="" class="catalog-img">
-                        <div class="catalogItem-details">
-                            <h4 class="catalogItem-topic"><span class="no-wrap">The Mystery of the Lost Key</span></h4>
-                            <p class="catalogItem-des">This is just a placeholder. <br>  A thrilling detective novel that will keep you on the edge of
-                            your seat.</p>
-                        </div>
-                        <div class="catalogItem-price flex">
-                            <span class="discount-price">$14.99</span>
-                            <span class="real-price">$18.99</span>
-                        </div>
-                    </div>
-                    <div class="catalog-item catalog-item2 flex">
-                        <img src="images/Cover 1.jpg" alt="" class="catalog-img">
-                        <div class="catalogItem-details">
-                            <h4 class="catalogItem-topic"><span class="no-wrap">The Mystery of the Lost Key</span></h4>
-                            <p class="catalogItem-des">This is just a placeholder. <br> A thrilling detective novel that will keep you on the edge of
-                            your seat.</p>
-                        </div>
-                        <div class="catalogItem-price flex">
-                            <span class="discount-price">$14.99</span>
-                            <span class="real-price">$18.99</span>
-                        </div>
-                    </div>
-                    <div class="catalog-item catalog-item3 flex">
-                        <img src="images/Cover 2.jpg" alt="" class="catalog-img">
-                        <div class="catalogItem-details">
-                            <h4 class="catalogItem-topic"><span class="no-wrap">The Mystery of the Lost Key</span></h4>
-                            <p class="catalogItem-des">This is just a placeholder. <br> A thrilling detective novel that will keep you on the edge of
-                                your seat.</p>
-                        </div>
-                        <div class="catalogItem-price flex">
-                            <span class="discount-price">$14.99</span>
-                            <span class="real-price">$18.99</span>
-                        </div>
-                    </div>
-                    <div class="catalog-item catalog-item4 flex">
-                        <img src="images/Cover 3.jpg" alt="" class="catalog-img">
-                        <div class="catalogItem-details">
-                            <h4 class="catalogItem-topic"><span class="no-wrap">The Mystery of the Lost Key</span></h4>
-                            <p class="catalogItem-des">This is just a placeholder. <br> A thrilling detective novel that will keep you on the edge of
-                            your seat.</p>
-                        </div>
-                        <div class="catalogItem-price flex">
-                            <span class="discount-price">$14.99</span>
-                            <span class="real-price">$18.99</span>
-                        </div>
-                    </div>
-                    <div class="catalog-item catalog-item5 flex">
-                        <img src="images/cover 4.jpg" alt="" class="catalog-img">
-                        <div class="catalogItem-details">
-                            <h4 class="catalogItem-topic"><span class="no-wrap">The Mystery of the Lost Key</span></h4>
-                            <p class="catalogItem-des">This is just a placeholder. <br> A thrilling detective novel that will keep you on the edge of
-                            your seat.</p>
-                        </div>
-                        <div class="catalogItem-price flex">
-                            <span class="discount-price">$14.99</span>
-                            <span class="real-price">$18.99</span>
-                        </div>
-                    </div>
-                    <div class="catalog-item catalog-item6 flex">
-                        <img src="images/cover 5.jpg" alt="" class="catalog-img">
-                        <div class="catalogItem-details">
-                            <h4 class="catalogItem-topic"><span class="no-wrap">The Mystery of the Lost Key</span></h4>
-                            <p class="catalogItem-des">This is just a placeholder. <br> A thrilling detective novel that will keep you on the edge of
-                            your seat.</p>
-                        </div>
-                        <div class="catalogItem-price flex">
-                            <span class="discount-price">$14.99</span>
-                            <span class="real-price">$18.99</span>
-                        </div>
-                    </div>
-                    <!-- Add more book items as needed -->
-                </div>
-            </div>
-        </section>
+        </div>
 
-        <!-- Brand Section -->
-        <section class="section brand">
-            <div class="brand-container container">
-                <h4 class="section-subtitle"><i>Our Trusted Authors</i></h4>
-                <div class="brand-images">
-                    <!-- Add author images -->
-                    <figure class="brand-image">
-                        <a href="https://en.wikipedia.org/wiki/J._K._Rowling" title="J. K. Rowling" target="_blank"><img src="images/author1.jpg"
-                                alt="" class="brand-img"></a>
-                                <figcaption> British author and philanthropist. She wrote Harry Potter, a seven-volume fantasy series published from 1997 to 2007.</figcaption>
-                        </figure>
-                    <figure class="brand-image">
-                        <a href="https://en.wikipedia.org/wiki/R._L._Stine" title="R. L. Stine" target="_blank"><img src="images/author2.jpg"
-                                alt="" class="brand-img"></a>
-                                <figcaption>Sometimes known as Jovial Bob Stine and Eric Affabee, is an American novelist, short story writer, television producer,
-                                screenwriter, and executive editor.</figcaption>
-                        </figure>
-                    <!-- Add more author images -->
-                </div>
-            </div>
-        </section>
-    
-        <!-- Reviews Section -->
-        <section class="section review" id="review">
-            <div class="review-container container">
-                <div class="review-text">
-                    <h4 class="section-subtitle"><i>Reviews</i></h4>
-                    <h2 class="section-title">What Readers Say</h2>
-                    <p class="section-description">Read what our customers have to say about their favorite books and
-                        experiences.</p>
-                </div>
-    
-                <div class="testimonials">
-                    <!-- Add book-related testimonials -->
-                    <div class="testimonial-content flex">
-                        <img src="images/reader1.jpg" alt="" class="review-img">
-                        <p class="review-quote">I was captivated by the plot twists in the latest mystery novel.
-                            Couldn't put it down!</p>
-                        <i class='bx bxs-quote-alt-left quote-icon'></i>
-                        <div class="testimonial-personDetails flex">
-                            <span class="name">Franklin Dmitri</span>
-                            <span class="job">Book Enthusiast</span>
-                        </div>
-                    </div>
-                    <div class="testimonial-content flex">
-                        <img src="images/reader2.jpg" alt="" class="review-img">
-                        <p class="review-quote">I was captivated by the plot twists in the latest mystery novel.
-                            Couldn't put it down!</p>
-                        <i class='bx bxs-quote-alt-left quote-icon'></i>
-                        <div class="testimonial-personDetails flex">
-                            <span class="name">Franklin Dmitri</span>
-                            <span class="job">Book Enthusiast</span>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    
-        <!-- Newsletter Section -->
-        <section class="section newsletter">
-            <div class="newsletter-container container">
+    </section>
+    </main>
+    <!-- Footer Section -->
+    <footer class="section footer">
+        <div class="footer-container container">
+            <div class="footer-content">
                 <a href="#" class="logo-content flex">
                     <i class='bx bx-book logo-icon'></i>
                     <span class="logo-text">Bookstore.</span>
                 </a>
-                <p class="section-description">Subscribe to our newsletter and stay updated on the latest releases,
-                    promotions, and literary events.</p>
-                <div class="newsletter-inputBox">
-                    <input type="email" placeholder="email@example.com" class="newsletter-input">
-                    <button class="button newsletter-button">Subscribe</button>
-                </div>
-                <div class="newsletter media-icons flex">
-                    <!-- Replace the following URLs with our actual social media links -->
-                    <a href="https://www.facebook.com"><i class='bx bxl-facebook'></i></a>
-                    <a href="https://twitter.com"><i class='bx bxl-twitter'></i></a>
-                    <a href="https://www.instagram.com"><i class='bx bxl-instagram-alt'></i></a>
-                    <a href="https://github.com"><i class='bx bxl-github'></i></a>
-                    <a href="https://www.youtube.com"><i class='bx bxl-youtube'></i></a>
+                <p class="content-description">Connecting readers with captivating stories. Find your next favorite book
+                    with us.</p>
+                <div class="footer-location flex">
+                    <i class='bx bx-map map-icon'></i>
+                    <div class="location-text">
+                        Addis Ababa, Ethiopia
+                    </div>
                 </div>
             </div>
-
-        </section>
-    </main>
-<!-- Footer Section -->
-<footer class="section footer">
-    <div class="footer-container container">
-        <div class="footer-content">
-            <a href="#" class="logo-content flex">
-                <i class='bx bx-book logo-icon'></i>
-                <span class="logo-text">Bookstore.</span>
-            </a>
-            <p class="content-description">Connecting readers with captivating stories. Find your next favorite book with us.</p>
-            <div class="footer-location flex">
-                <i class='bx bx-map map-icon'></i>
-                <div class="location-text">
-                    Addis Ababa, Ethiopia
-                </div>
+            <div class="footer-linkContent">
+                <ul class="footer-links">
+                    <h4 class="footerLinks-title">Facility</h4>
+                    <li><a href="#" class="footer-link">Reading Room</a></li>
+                    <li><a href="#" class="footer-link">Book Club</a></li>
+                    <li><a href="#" class="footer-link">Literary Events</a></li>
+                    <li><a href="#" class="footer-link">Online Ordering</a></li>
+                    <li><a href="#" class="footer-link">Author Talks</a></li>
+                </ul>
+                <ul class="footer-links">
+                    <h4 class="footerLinks-title">Genres</h4>
+                    <li><a href="#" class="footer-link">Fiction</a></li>
+                    <li><a href="#" class="footer-link">Non-Fiction</a></li>
+                    <!-- more genre links as needed -->
+                </ul>
             </div>
         </div>
-        <div class="footer-linkContent">
-            <ul class="footer-links">
-                <h4 class="footerLinks-title">Facility</h4>
-                <li><a href="#" class="footer-link">Reading Room</a></li>
-                <li><a href="#" class="footer-link">Book Club</a></li>
-                <li><a href="#" class="footer-link">Literary Events</a></li>
-                <li><a href="#" class="footer-link">Online Ordering</a></li>
-                <li><a href="#" class="footer-link">Author Talks</a></li>
-            </ul>
-            <ul class="footer-links">
-                <h4 class="footerLinks-title">Genres</h4>
-                <li><a href="#" class="footer-link">Fiction</a></li>
-                <li><a href="#" class="footer-link">Non-Fiction</a></li>
-                <!-- more genre links as needed -->
-            </ul>
-        </div>
-    </div>
-</footer>
+    </footer>
 
-<script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
