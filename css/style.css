@@ -213,6 +213,7 @@ img{
 .phone-icon,
 .phone-number a{
   color: var(--white-color);
+  cursor: pointer;
  
 }
 
