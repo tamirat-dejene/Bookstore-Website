@@ -1,19 +1,3 @@
-// Swiper js
-// var swiper = new Swiper(".mySwiper", {
-//   slidesPerView: 1,
-//   // grabCursor: true,
-//   loop: true,
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true,
-//   },
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-// });
-//const search=document.querySelector(#'search-icon');
-
 
 // Nav open close
 const body = document.querySelector('body'),
@@ -43,15 +27,8 @@ window.addEventListener("scroll", () => {
   }else{
     document.querySelector("header").classList.remove("header-active");
   }
-
-  // Scroll up button
-  const scrollUpBtn = document.querySelector('.scrollUp-btn');
-
-  if(scrollY > 250){
-    scrollUpBtn.classList.add("scrollUpBtn-active");
-  }else{
-    scrollUpBtn.classList.remove("scrollUpBtn-active");
-  }})
+})
+  
   
   
 //   // Nav link indicator
@@ -174,35 +151,59 @@ window.addEventListener("scroll", () => {
   
       totalSumElement.textContent = "Total amount: "+totalSum.toFixed(2)+" $";
     }
+
   });
   
 
   
 //login and sign up
+
+   
+function validateForm(event) {
+  event.preventDefault();
+
+  var bookTitle = document.getElementById('bookTitle').value;
+  var author = document.getElementById('author').value;
+  var rating = document.getElementById('rating').value;
+  var review = document.getElementById('review').value;
+
+  if (bookTitle.trim() === '' || author.trim() === '' || rating.trim() === '' || review.trim() === '') {
+    alert('All fields are required');
+    return;
+  }
+
+  if (isNaN(rating) || rating < 1 || rating > 5) {
+    alert('Rating must be a number between 1 and 5');
+    return;
+  }
+  alert('Form submitted successfully!');
+}  
  const wrapper = document.querySelector('.wrapper');
  const loginLink = document.querySelector('.login-link');
  const registerLink = document.querySelector('.register-link');
  const btnLogin= document.querySelector('.login-content');
-  const iconClose= document.querySelector('.icon-close');
-   
-  
-btnLogin.addEventListener('click', ()=>{
+ const iconClose = document.querySelector('.icon-close');
+ const cover = document.querySelector(".coverer");
+
+btnLogin.addEventListener('click', () => {
   wrapper.classList.add('active-popup')
- });
- 
- iconClose.addEventListener('click', ()=>{
+  cover.classList.add("actvator");
+  document.body.style.overflow = "hidden"
+});
+
+iconClose.addEventListener('click', () => {
   wrapper.classList.remove('active-popup')
- });
+  cover.classList.remove("actvator");
+  document.body.style.overflow="scroll"
+});
    registerLink.addEventListener('click', ()=>{
     wrapper.classList.add('active')
   });
   loginLink.addEventListener('click', ()=>{
     wrapper.classList.remove('active')
   });
- 
-   
-  
-  
-  // Scroll Reveal Animation
+
+
+
  
 
