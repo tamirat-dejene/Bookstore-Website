@@ -33,7 +33,7 @@ html{
 --border-color: #484848;
 --white-color: #FFF;
 --section-bg: #2C3034;
---log-fon-c:#888682;
+--log-fon-c:#afa79f;
 /* z-index */
 --z-overlay: 10;
 --z-fixed: 100;
@@ -96,19 +96,27 @@ input{
   font-weight: var(--font-regular);
   color: var(--text-color);
 }
+i{
+  font-size: 1em;
+}
 input{
   outline: none;
 }
 ul{
   list-style-type: none;
 }
+
 a {
+  color: var(--text-color);
   text-decoration: none;
 }
+
+
 img{
   width: 100%;
   height: auto;
   object-fit: cover;
+  user-select: none;
 }
 
 /* Utility CSS */
@@ -250,7 +258,7 @@ img{
   background-color: var(--white-color);
   opacity: 0;
 }
-.active-navlink::before{
+.active-navlink::after{
   opacity: 1;
 }
 .header-active .active-navlink::before{
@@ -340,8 +348,7 @@ img{
   height:44rem;
   border-radius: 3rem;
   box-shadow: 0px 5px 20px rgba(122, 118, 118, 0.51);
-  background-color:transparent;
-  backdrop-filter: blur(40px);
+  backdrop-filter: blur(60px);
   justify-content: center;
   align-items: center;
   top: 50%;
@@ -349,8 +356,8 @@ img{
   transform:  translate(-50%,-50%);
   transform: scale(0) ;
   overflow: hidden;
-   border: 1px solid #5c3b3bc0;
-   transition: 0.4s , 0.25s ;
+  border: 1px solid #5c3b3bc0;
+  transition: 0.4s  ;
   position: fixed;
 }
 .wrapper.active-popup{
@@ -971,6 +978,21 @@ text-decoration: underline;
   color: var(--primary-color);
 }
 
+.coverer {
+  display: none;
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.6));
+  position: fixed;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.actvator {
+  display: block;
+}
+
+
 
 /* Newsletter */
 .newsletter .logo-icon,
@@ -978,7 +1000,7 @@ text-decoration: underline;
 .newsletter .section-description{
   color: var(--text-color);
 }
-.newletter-container{
+.newsletter-container{
   display: grid;
   justify-items: center;
   row-gap: 4rem;
@@ -998,6 +1020,8 @@ text-decoration: underline;
 }
 .newsletter-inputBox{
   position: relative;
+  display: flex;
+  justify-content: space-between;
   height: 5rem;
   max-width: 400px;
   width: 100%;
@@ -1012,7 +1036,7 @@ text-decoration: underline;
 }
 .newsletter-button{
   position: absolute;
-  top: 0;
+  top: 2;
   right: 0;
   border-radius: 0 3rem 3rem 0;
 }
@@ -1246,10 +1270,7 @@ text-decoration: underline;
   }
   
 }
-@media screen and (max-width: 500px) {
 
-  
-}
 @media screen and (max-width: 400px) {
   .homeTitle{
     font-size:3rem;
@@ -1260,6 +1281,14 @@ text-decoration: underline;
     shape-rendering: crispEdges;
     text-rendering: optimizeLegibility;
     image-rendering: optimizeQuality;
+  }
+  .about-intro-video {
+    max-width: 350px;
+    border: 4px solid var(--section-bg);
+   
+  }
+  .about-video{
+    max-width: 340px;
   }
  
   .menu-item{
